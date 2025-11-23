@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kết nối Giáo viên - Học trực tuyến</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="topbar">
+<div class="container topbar-inner">
+<div class="brand">Trang kết nối</div>
+<nav class="nav">
+<a href="#home">Trang chủ</a>
+<a href="#teachers">Giáo viên</a>
+<a href="#lessons">Buổi học</a>
+</nav>
+<div class="actions">
+<button class="btn ghost">Đăng nhập</button>
+<button class="btn primary">Đăng ký</button>
+</div>
+</div>
+</header>
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+<div class="container hero-grid">
+<div class="hero-left">
+<h1>Tìm giáo viên phù hợp — học mọi lúc, mọi nơi</h1>
+<p>Tìm kiếm theo môn, trình độ, đánh giá, và đặt lịch dạy trực tuyến chỉ trong vài giây.</p>
+
+
+<form class="search">
+<input type="text" placeholder="Tìm môn (Toán, Anh, Lý...)" />
+<select aria-label="Chọn cấp độ">
+<option>Toàn bộ cấp</option>
+<option>Tiểu học</option>
+<option>THCS</option>
+<option>THPT</option>
+<option>Đại học</option>
+</select>
+<button class="btn primary">Tìm kiếm</button>
+</form>
+<div class="features">
+<div class="f">💬 Chat trực tiếp</div>
+<div class="f">📅 Lịch dạy & nhắc giờ</div>
+<div class="f">⭐ Đánh giá & phản hồi</div>
+</div>
+</div>
+
+
+<div class="hero-right">
+<!-- ảnh giáo viên ví dụ (bỏ vào file nếu cần) -->
+<div class="teacher-preview card-tilt">
+<img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" alt="Giáo viên" />
+<div class="teacher-info">
+<h3>Nguyễn Thị Mai</h3>
+<p class="meta">Giảng viên Toán • 8 năm kinh nghiệm</p>
+<div class="rating">⭐ 4.9 <span>(120 đánh giá)</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TEACHER LIST -->
+<section id="teachers" class="container teachers-section">
+<div class="section-head">
+<h2>Giáo viên nổi bật</h2>
+<p>Chọn giáo viên theo thẻ—xem lịch, chuyên môn và đánh giá ngay.</p>
+</div>
+
+
+<div class="cards">
+<!-- Card 1 -->
+<article class="card">
+<img class="avatar" src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" alt="avatar" />
+<div class="card-body">
+<h3>Phạm Văn Hùng</h3>
+<p class="sub">Toán, luyện thi THPT</p>
+<p class="desc">Giảng viên có 10 năm ôn thi, lớp số lượng nhỏ, phương pháp trực quan.</p>
+<div class="card-meta">
+<div>⭐ 4.8</div>
+<div>📅 2 slot trống/tuần</div>
+</div>
+<div class="card-actions">
+<button class="btn ghost">Xem hồ sơ</button>
+<button class="btn primary">Đặt lịch</button>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="card">
+<img class="avatar" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" alt="avatar" />
+<div class="card-body">
+<h3>Trần Mỹ Linh</h3>
+<p class="sub">Tiếng Anh giao tiếp</p>
+<p class="desc">Phương pháp nói tự nhiên, lớp thực hành tương tác cao.</p>
+<div class="card-meta">
+<div>⭐ 4.9</div>
+<div>📅 4 slot trống/tuần</div>
+</div>
+<div class="card-actions">
+<button class="btn ghost">Xem hồ sơ</button>
+<button class="btn primary">Đặt lịch</button>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="card">
+<img class="avatar" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" alt="avatar" />
+<div class="card-body">
+<h3>Hoàng Văn Tuấn</h3>
+<p class="sub">Vật lý, Hệ thống minh họa</p>
+<p class="desc">Dạy kèm thực nghiệm, giải nhanh bài khó, luyện thi đại học.</p>
+<div class="card-meta">
+<div>⭐ 4.7</div>
+<div>📅 1 slot trống/tuần</div>
+</div>
+<div class="card-actions">
+<button class="btn ghost">Xem hồ sơ</button>
+<button class="btn primary">Đặt lịch</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- LESSON / CLASS PAGE SIMULATION -->
+<section id="lessons" class="container lessons">
+<div class="lesson-head">
+<h2>Buổi học của bạn</h2>
+<p>Quản lý lịch, video call tích hợp và ghi chú buổi học.</p>
+</div>
+
+
+<div class="lesson-grid">
+<div class="upcoming card">
+<h3>Buổi tiếp theo</h3>
+<p class="when">Thứ 3, 09:00 — Toán với Phạm Văn Hùng</p>
+<div class="lesson-actions">
+<button class="btn primary">Tham gia video</button>
+<button class="btn ghost">Ghi chú</button>
+</div>
+</div>
+
+
+<div class="notes card">
+<h3>Ghi chú nhanh</h3>
+<textarea placeholder="Ghi chú nội dung, link tài liệu..."></textarea>
+<div class="note-actions"><button class="btn primary">Lưu</button></div>
+</div>
+
+
+<div class="history card">
+<h3>Lịch sử buổi học</h3>
+<ul>
+<li>05/11/2025 — Toán (bài: Hình học không gian)</li>
+<li>29/10/2025 — Anh (bài: Speaking practice)</li>
+<li>22/10/2025 — Lý (bài: Điện xoay chiều)</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer class="footer">
+<div class="container footer-inner">
+<div>© 2025 Trang kết nối — Kết nối giáo viên & học sinh</div>
+<div class="socials">Email: cuongchinh009@gmail.com</div>
+</div>
+</footer>
+<!-- Simple interaction scripts -->
+<script>
+// Tương tác đơn giản: tilt animation based on mouse
+const tilt = document.querySelector('.card-tilt');
+if (tilt) {
+tilt.addEventListener('mousemove', e => {
+const rect = tilt.getBoundingClientRect();
+const x = (e.clientX - rect.left) / rect.width - 0.5;
+const y = (e.clientY - rect.top) / rect.height - 0.5;
+tilt.style.transform = `rotateX(${ -y * 6 }deg) rotateY(${ x * 6 }deg)`;
+});
+tilt.addEventListener('mouseleave', () => tilt.style.transform = 'rotateX(0) rotateY(0)');
+}
+</script>
+</body>
+</html>
